@@ -9,11 +9,19 @@
 </head>
 <body>
     <div class='navbar'>
-        <a href="index.html">Home</a>
-        <a href="yourpurchases.html">Your Purchases</a>
+    <div class="dropdown">
+        <i class="fa-solid fa-bars" style="color:white;" id="menu-icon"></i>
+        <ul id="menu">
+            <li><a href="">News</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Catalog</a></li>
+        </ul>
     </div>
+        <a href="index.html">Home</a>
+        <a href="yourpurchases.html"><i class="fa-solid fa-cart-shopping" style="align-items:right"></i></a>
+    </div>
+    <h1>Hey,glad you are here!</h1>
     <div class="buttons">
-        <h1>Hey,glad you are here!</h1>
         <button class="classic_button">Sign Up</button>
         <button class="classic_button">Sign In</button>
     </div>
@@ -36,7 +44,17 @@
              <span class="circle_fish">Fish</span>
         </div>
     </div>
-<button class="classic_button" >Choose</button>
+<button class="classic_button" id="openForm" disabled>Choose</button>
+
+<!--Form for the chosen pet-->
+<div class="pet_form" id="petForm">
+    <header>A few words about your pet</header>
+    <input type="text" placeholder="Name">
+    <input type="number" placeholder="Age">
+    <input type="text" placeholder="Breed">
+    <input type="text" placeholder="Preferred activity">
+    <button class="classic_button">Submit</button>
+</div>
 <script src="main.js"></script>
 </body>
 </html>

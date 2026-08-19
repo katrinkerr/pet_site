@@ -1,3 +1,8 @@
+:root{
+    --main-background-color:rgb(139, 186, 228);
+
+}
+
 h1{
     text-align:center;
     padding:40px;
@@ -5,7 +10,7 @@ h1{
     font-family:Georgia;
 }
 .navbar{
-    background-color:rgb(139, 186, 228);
+    background-color:var(--main-background-color);
     padding:30px;
 }
 body{
@@ -112,8 +117,68 @@ a{
     font-size:100px;
 }
 .buttons{
-    display:inline-block;
-    margin-right:15px;
-    margin-left:0px;
+    display:flex;
+    align-items:center;
+    position:relative;
+    text-align:center;
+    gap:20px;
+}
+.pet_form{
+    display:none;
+    width:400px;
+    height:200px;
+    position:relative;
+    background-color:rgb(198, 163, 128);
+    border-radius:40px;
+    overflow:hidden;
+    align-items:center;
+    justify-content:center;
 
+}
+.pet_form.visible{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    left:50%;
+}
+.pet_form input{
+    display:block;
+    margin:10px;
+    width:80%;
+    height:20px;
+    cursor:move;
+}
+.pet_form header{
+    text-align:center;
+    font-size:15px;
+    background-color:rgb(212, 201, 201);
+    color:white;
+    border-radius:20px;
+}
+.pet_form button{
+    width:100px;
+    height:100px;
+    position:relative;
+    left:50%;
+}
+
+.dropdown{
+    position:relative;
+    display:inline-block;
+}
+#menu{
+    display:none;
+    position:absolute;
+    background-color:var(--main-background-color);
+    padding:30px;
+
+}
+
+#menu-icon{
+    cursor:pointer;
+}
+
+#menu li{
+    padding:10px;
+    list-style:square;
 }
